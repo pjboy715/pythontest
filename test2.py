@@ -2,8 +2,9 @@ import requests
 
 def getHTMLText(url):
     try:
-        kv = {'user-agent':'Mozilla/5.0'}
-        r = requests.get(url,headers=kv)
+        kv = {'User-Agent':'Mozilla/5.0'}
+        imp= {'q':'python'}
+        r = requests.get(url,params=imp,headers=kv)
         r.raise_for_status()
         r.encoding=r.apparent_encoding
         return r.text
@@ -11,5 +12,5 @@ def getHTMLText(url):
         return '产生异常'
 
 if __name__ == '__main__':
-    url = 'https://www.amazon.cn/dp/B01MXW6SF6'
+    url = 'http://www.so.com/s'
     print(getHTMLText(url))
