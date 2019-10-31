@@ -1,1 +1,4 @@
 Sync: 上传完成。Gist ID:c8207f7be4dc3f50b2a9020b042cf481。请复制这个 ID 并将其用于其他设备来下载配置。
+
+上传设置：Shift + Alt + U
+下载设置：Shift + Alt + D
